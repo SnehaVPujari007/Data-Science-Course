@@ -1,0 +1,54 @@
+1. Basic Statistical Formulas
+Formula	Description	Example
+=SUM(range)	Adds all numbers in a range	=SUM(A1:A10)
+=AVERAGE(range)	Calculates the average	=AVERAGE(B1:B10)
+=MEDIAN(range)	Finds the median	=MEDIAN(C1:C10)
+=COUNT(range)	Counts numeric values	=COUNT(D1:D10)
+=COUNTA(range)	Counts non-empty cells	=COUNTA(E1:E10)
+=COUNTIF(range, criteria)	Counts cells that meet a condition	=COUNTIF(F1:F10, ">50")
+=MODE.SNGL(range)	Returns the most common value	=MODE.SNGL(G1:G10)
+=STDEV.P(range)	Calculates population standard deviation	=STDEV.P(H1:H10)
+=VAR.P(range)	Calculates population variance	=VAR.P(I1:I10)
+2. Lookup & Reference Formulas
+Formula	Description	Example
+=VLOOKUP(value, table, col, exact)	Vertical lookup	=VLOOKUP(101, A2:C10, 2, FALSE)
+=HLOOKUP(value, table, row, exact)	Horizontal lookup	=HLOOKUP("Jan", A1:D2, 2, TRUE)
+=INDEX(array, row, col)	Returns a value from a specific row and column	=INDEX(A1:C10, 3, 2)
+=MATCH(value, range, type)	Returns the position of a value in a range	=MATCH(50, B1:B10, 0)
+=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode])	Advanced lookup	=XLOOKUP("Apple", A1:A10, B1:B10, "Not Found")
+3. Text Formulas
+Formula	Description	Example
+=LEFT(text, num_chars)	Extracts characters from the start of text	=LEFT(A1, 5)
+=RIGHT(text, num_chars)	Extracts characters from the end of text	=RIGHT(A1, 3)
+=MID(text, start, num_chars)	Extracts characters from the middle of text	=MID(A1, 2, 4)
+=LEN(text)	Returns the number of characters in text	=LEN(A1)
+=TRIM(text)	Removes extra spaces	=TRIM(A1)
+=CONCATENATE(text1, text2)	Combines text from multiple cells	=CONCATENATE(A1, " ", B1)
+=TEXT(value, format_text)	Formats a value as text	=TEXT(TODAY(), "MM/DD/YYYY")
+4. Date and Time Formulas
+Formula	Description	Example
+=TODAY()	Returns the current date	=TODAY()
+=NOW()	Returns the current date and time	=NOW()
+=DATEDIF(start_date, end_date, unit)	Calculates difference between dates	=DATEDIF(A1, B1, "D")
+=TEXT(date, format)	Formats a date or time as text	=TEXT(A1, "YYYY-MM-DD")
+=WEEKDAY(date, [return_type])	Returns the day of the week (1=Sunday, 2=Monday)	=WEEKDAY(A1, 2)
+5. Logical Formulas
+Formula	Description	Example
+=IF(condition, value_if_true, value_if_false)	Returns one value if condition is TRUE, another if FALSE	=IF(A1>10, "Yes", "No")
+=AND(condition1, condition2)	Returns TRUE if all conditions are true	=AND(A1>10, B1<20)
+=OR(condition1, condition2)	Returns TRUE if any condition is true	=OR(A1>10, B1<20)
+=NOT(condition)	Reverses the logic of its argument	=NOT(A1>10)
+6. Data Cleaning
+Formula	Description	Example
+=CLEAN(text)	Removes non-printable characters	=CLEAN(A1)
+=SUBSTITUTE(text, old_text, new_text)	Replaces old text with new text	=SUBSTITUTE(A1, "old", "new")
+=PROPER(text)	Capitalizes the first letter of each word	=PROPER(A1)
+=UPPER(text)	Converts text to uppercase	=UPPER(A1)
+=LOWER(text)	Converts text to lowercase	=LOWER(A1)
+7. Advanced Data Analysis
+Formula	Description	Example
+=TRANSPOSE(range)	Converts rows to columns or vice versa	=TRANSPOSE(A1:A10)
+=UNIQUE(range)	Returns unique values from a range (Google Sheets only)	=UNIQUE(A1:A10)
+=SORT(range, sort_index, [sort_order])	Sorts a range of data	=SORT(A1:B10, 2, TRUE)
+=FILTER(range, condition)	Filters a range based on a condition	=FILTER(A1:B10, B1:B10>10)
+=ARRAYFORMULA(range)	Performs calculations on an entire array	=ARRAYFORMULA(A1:A10*B1:B10)
