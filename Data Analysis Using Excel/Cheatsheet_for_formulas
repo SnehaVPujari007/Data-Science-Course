@@ -1,5 +1,5 @@
-## 1. Basic Statistical Formulas
-Formula	Description	                     Example
+1. Basic Statistical Formulas
+Formula	Description	                     
 =SUM(range)	Adds all numbers in a range	=SUM(A1:A10)
 =AVERAGE(range)	Calculates the average	=AVERAGE(B1:B10)
 =MEDIAN(range)	Finds the median	=MEDIAN(C1:C10)
