@@ -4,7 +4,7 @@ It creates an instance of the Flask class,
  which will be your WSGI (Web server Gateway Interface) application
 '''
 ###  WSGI application
-app = Flask(__name__)
+application = Flask(__name__)
 
 @app.route("/index")
 
