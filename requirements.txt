@@ -7,6 +7,7 @@ scikit-learn
 imblearn
 flask
 streamlit
-tensorflow == 2.16.1
+flask
 tensorboard 
 streamlit
+docker
