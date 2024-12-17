@@ -13,3 +13,4 @@ streamlit
 docker
 scikeras
 nltk
+bs4
