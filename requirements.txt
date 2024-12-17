@@ -11,3 +11,5 @@ flask
 tensorboard 
 streamlit
 docker
+scikeras
+nltk
