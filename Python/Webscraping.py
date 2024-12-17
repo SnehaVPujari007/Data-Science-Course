@@ -15,11 +15,11 @@ urls = [
     'https://python.langchain.com/docs/concepts/'
 ]
 
+    
 def  fetch_content(url):
     response = requests.get(url)
     soup = BeautifulSoup(response.content , 'html.parser')
-    print(f'Fetched {len(soup.text)} characters from {url} ')
-
+    print(f'Fetched {soup.text} characters from {url} ')
 
 threads = []
 
